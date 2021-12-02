@@ -43,6 +43,8 @@ Go to `https://www.json-generator.com/`
 - download it on `Desktop`
 - import it into mongodb `test` database into a collection named `users`
 
+mongoimport --db test --collection users --file /home/reena/Desktop/MongoDB/TA-AC-BACKEND-mongodb-basics-TMaaaa/block-BMaaai/generated.json --jsonArray
+
 #### Export data from mongodb server to local system in json format using
 
 `mongoexport`command.
@@ -51,10 +53,11 @@ Go to `https://www.json-generator.com/`
 mongoexport --db state --collection cities --out ~/Desktop/states/city.json --jsonArray
 ```
 
+
 ## BLOCK-writeCode
 
 Export `users` collection from `test` database onto `Desktop` in a file named `exported.json`.
-
+mongoexport --db test --collection users --out /home/reena/Desktop/MongoDB/exported.json
 #### Import from csv file
 
 ```
